@@ -1,0 +1,99 @@
+body{
+    margin: 0;  /*pour definir la marge exterieur*/
+    padding:0; /*pour definir la marge interieur*/
+    background-color: palevioletred;/*determine la couleur de l'arriere plan*/
+    overflow-x: hidden;/*tout ce qui depasse l'ecran d'affichage ne s'affiche pas */
+}
+
+img{
+width: 100%;/* cela definie la largeur de l'image*/
+height: 300px;/*la hauteur de l'image*/
+object-fit: cover;/*pour garder la qualiter de l'image*/
+}
+h1{
+    text-align: center;/*cela permet de centrer le texte*/
+    color: white;/*definie la couleur*/
+}
+#container{
+    display: flex;/*la disposition*/
+    flex-wrap:wrap;/*disposition des elements sur la meme ligne par defauts*/
+    padding: 1rem;/*la marge interieur*/
+    
+
+}
+.bloc{
+   display: flex;
+    width: 47%;/*la largeur du bloc*/
+    height: 200px;/*la hauteur du bloc*/
+    background-color: yellow;/*la couleur de l'arriere plan*/
+    margin: 0.5rem;/*la marge exterieur*/
+    border: 2px solid black;/*la bordure*/
+    border-radius: 10px;/*definie la courbe des bordures*/
+    justify-content: center;
+    align-items: center;
+}
+.bloc p{
+    /* position: relative;/*la position relative des paragraphes*/
+    top: 50%;/*deplacer les ecritures verticalement*/
+    left: 50%;/*balancer les ecritures horizontalment au milieu*/
+    color: blue;/*couleur*/
+    font-size: 1.5rem;/*la taille de la police*/
+    font-weight: bold;/*mettre les ecritures en gras*/
+    writing-mode: vertical-lr;/*mode d'ecriture*/
+    
+}
+#button{
+background-color: rgb(226, 43, 43);
+border-radius: 70px;
+width: 80px;
+height: 75px;
+margin-bottom: 50px;
+margin-left:45%;
+
+}
+@media screen and (max-width:700px){
+ #container{
+    flex-direction: column;
+ }
+ .bloc {
+   width: 100%;
+ }
+  
+ h1{
+    font-size: 20px;
+ }
+ img{
+    height: 200%;
+ }
+}
+
+#formulaire{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+h1{
+   letter-spacing: 3px;
+   text-align: center;
+   color: white;
+}
+#class1, #class2,#class3,#class4,#class5{
+    padding: 10px;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 20px;
+}
+#bouton{
+    background-color: #fff;
+    border-radius: 60px;
+    width: 70px;
+    height: 70px;
+    margin-left: 40%;
+}
